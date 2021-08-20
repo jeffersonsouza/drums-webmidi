@@ -1,0 +1,49 @@
+div.container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .midi-inputs {
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .drum-pads {
+    display: block;
+    max-width: 408px;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      line-height: 90px;
+      border: #fff solid 1px;
+      width: 90px;
+      height: 90px;
+      margin: 5px;
+      font-size: 18px;
+      background-color: #444;
+      box-shadow: 0 8px 6px -6px black;
+
+      &:hover {
+        background-color: lighten(#444, 10%);
+        cursor: pointer;
+      }
+
+      &.active {
+        background-color: darken(#444, 10%);
+        transform: scale(1.1);
+        transition: all .2s;
+      }
+    }
+  }
+}

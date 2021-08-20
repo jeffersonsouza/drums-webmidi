@@ -1,14 +1,23 @@
-# WebMidiExemplo
+# Web Midi Example
+
+This code was created and presented at [Confloss](https://confloss.com.br) in Brazil.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+
+This code currently reads up MIDI devices and list them, once you select a device it starts to listen MIDI events.
+
+The example was only tested with Alesis Mesh Nitro, for other drums and MIDI devices is necessary to map it accordingly.
+
+You can also use a Virtual MIDI device, like [VMPK](https://vmpk.sourceforge.io) to emulate a MIDI Input/output.
+To make it work correctly, in VMPK settings you should set the instrument as General MIDI in Behaviour Tab.
+
+The slides of this presentation is also included in this repo.
+
+If you have any questions, just let me know. :)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
